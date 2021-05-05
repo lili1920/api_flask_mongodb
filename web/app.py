@@ -30,7 +30,7 @@ class Register(Resource):
 			"username":username,
 			"Password":hashed,
 			"Sentence":"",
-			"Tokens":6
+			"Tokens":7
 
 			})
 
