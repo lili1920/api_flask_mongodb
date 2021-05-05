@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web: # esta web depende de la base de datos db
+    build: ./web
+    ports:
+
+        - "5000:5000"
+    links: # el link muestra de quien depende la web -por lo tanto db se debe crear 1º
+        - db        
+
+#definir db
+
+  db:
+    build: ./db #lo constrimos desde el archivo de la carpeta db        
